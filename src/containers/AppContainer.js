@@ -2,13 +2,13 @@ import React from 'react';
 import { combineReducers } from 'redux'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import CountComponent from '../components/CountComponent';
+import CounterComponent from '../components/CounterComponent';
 
-const totoInit = {
+const counterInit = {
     total: 0
 }
 
-const todoReducer = (state = totoInit, action) => {
+const counterReducer = (state = counterInit, action) => {
     switch (action.type) {
         case 'ADD_TODO': {
             console.log("Here in reducers");
@@ -23,14 +23,14 @@ const todoReducer = (state = totoInit, action) => {
     }
 }
 
-const store = createStore(combineReducers({todoReducer}));
+const store = createStore(combineReducers({counterReducer}));
 
 
 class AppContainer extends React.Component {
     render(){
         return (
             <Provider store={store}>
-                <CountComponent/>
+                <CounterComponent/>
             </Provider>
         );
     }
