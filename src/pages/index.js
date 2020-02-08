@@ -1,5 +1,7 @@
+import CountComponent from '../components/CounterComponent';
+
 function HomePage() {
-    return <div>Welcome to Next.js!</div>
+    return <CountComponent/>
 }
 
 export default HomePage
