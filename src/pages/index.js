@@ -4,4 +4,4 @@ function HomePage() {
     return <CountComponent/>
 }
 
-export default HomePage
+export default HomePage;
