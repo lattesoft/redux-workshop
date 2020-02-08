@@ -12,6 +12,8 @@ const logger = store => next => action => {
     return result
 }
 
-const store = createStore(reducer,composeWithDevTools(applyMiddleware(logger,thunk)));
+const store = (initialState) => {
+    return createStore(reducer,initialState, composeWithDevTools(applyMiddleware(logger,thunk)));
+}
 
 export default store;
