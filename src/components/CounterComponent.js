@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
+import { addCount } from '../actions/countActions';
 
 class CounterComponent extends React.Component {
     render(){
@@ -10,12 +10,6 @@ class CounterComponent extends React.Component {
             <div><button onClick={this.props.addCount}>Click me!</button></div>
         </div>
         );
-    }
-}
-
-const addCount = ()=>{
-    return {
-        type: "ADD_TODO",
     }
 }
 
