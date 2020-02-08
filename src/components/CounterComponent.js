@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addCount } from '../actions/countActions';
+import { addCount } from '../redux/actions/countActions';
 
 class CounterComponent extends React.Component {
     render(){

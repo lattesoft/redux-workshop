@@ -1,12 +1,7 @@
 import React from 'react';
-import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import CounterComponent from '../components/CounterComponent';
-import reducer from '../reducers';
-
-
-const store = createStore(reducer);
-
+import store from '../redux/store';
 
 class AppContainer extends React.Component {
     render(){
